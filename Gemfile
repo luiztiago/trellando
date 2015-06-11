@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'font-awesome-rails', '~> 4.2.0.0'
 gem "compass-rails", github: "Compass/compass-rails", branch: "master"
 gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bower-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
