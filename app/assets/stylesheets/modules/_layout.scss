@@ -6,7 +6,7 @@ html, body {
 
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: image-url("dog-opacity.png") no-repeat bottom right;
+  background: $body-bg image-url("dog-opacity.png") no-repeat bottom right;
 }
 
 h1 {

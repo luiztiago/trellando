@@ -1,0 +1,196 @@
+// Should be used to modify the default spacing between objects (not between nodes of * the same object)
+// p,m = padding,margin
+// a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+// x,s,m,l,n = extra-sm($space-x-sm),sm($space-sm),md($space-md),lg($space-lg),none(0px)
+
+.ptn, .pvn, .pan {
+  padding-top: 0 !important;
+}
+
+.ptx, .pvx, .pax {
+  padding-top: $space-x-sm !important;
+}
+
+.pts, .pvs, .pas {
+  padding-top: $space-sm !important;
+}
+
+.ptm, .pvm, .pam {
+  padding-top: $space-md !important;
+}
+
+.ptl, .pvl, .pal {
+  padding-top: $space-lg !important;
+}
+
+.ptxl, .pvxl, .paxl {
+  padding-top: $space-x-lg !important;
+}
+
+.prn, .phn, .pan {
+  padding-right: 0 !important;
+}
+
+.prx, .phx, .pax {
+  padding-right: $space-x-sm !important;
+}
+
+.prs, .phs, .pas {
+  padding-right: $space-sm !important;
+}
+
+.prm, .phm, .pam {
+  padding-right: $space-md !important;
+}
+
+.prl, .phl, .pal {
+  padding-right: $space-lg !important;
+}
+
+.prxl, .phxl, .paxl {
+  padding-right: $space-x-lg !important;
+}
+
+.pbn, .pvn, .pan {
+  padding-bottom: 0 !important;
+}
+
+.pbx, .pvx, .pax {
+  padding-bottom: $space-x-sm !important;
+}
+
+.pbs, .pvs, .pas {
+  padding-bottom: $space-sm !important;
+}
+
+.pbm, .pvm, .pam {
+  padding-bottom: $space-md !important;
+}
+
+.pbl, .pvl, .pal {
+  padding-bottom: $space-lg !important;
+}
+
+.pbxl, .pvxl, .paxl {
+  padding-bottom: $space-x-lg !important;
+}
+
+.pln, .phn, .pan {
+  padding-left: 0 !important;
+}
+
+.plx, .phx, .pax {
+  padding-left: $space-x-sm !important;
+}
+
+.pls, .phs, .pas {
+  padding-left: $space-sm !important;
+}
+
+.plm, .phm, .pam {
+  padding-left: $space-md !important;
+}
+
+.pll, .phl, .pal {
+  padding-left: $space-lg !important;
+}
+
+.plxl, .phxl, .paxl {
+  padding-left: $space-x-lg !important;
+}
+
+.mtn, .mvn, .man {
+  margin-top: 0px !important;
+}
+
+.mtx, .mvx, .max {
+  margin-top: $space-x-sm !important;
+}
+
+.mts, .mvs, .mas {
+  margin-top: $space-sm !important;
+}
+
+.mtm, .mvm, .mam {
+  margin-top: $space-md !important;
+}
+
+.mtl, .mvl, .mal {
+  margin-top: $space-lg !important;
+}
+
+.mtxl, .mvxl, .maxl {
+  margin-top: $space-x-lg !important;
+}
+
+.mrn, .mhn, .man {
+  margin-right: 0 !important;
+}
+
+.mrx, .mhx, .max {
+  margin-right: $space-x-sm !important;
+}
+
+.mrs, .mhs, .mas {
+  margin-right: $space-sm !important;
+}
+
+.mrm, .mhm, .mam {
+  margin-right: $space-md !important;
+}
+
+.mrl, .mhl, .mal {
+  margin-right: $space-lg !important;
+}
+
+.mrxl, .mhxl, .maxl {
+  margin-right: $space-x-lg !important;
+}
+
+.mbn, .mvn, .man {
+  margin-bottom: 0 !important;
+}
+
+.mbx, .mvx, .max {
+  margin-bottom: $space-x-sm !important;
+}
+
+.mbs, .mvs, .mas {
+  margin-bottom: $space-sm !important;
+}
+
+.mbm, .mvm, .mam {
+  margin-bottom: $space-md !important;
+}
+
+.mbl, .mvl, .mal {
+  margin-bottom: $space-lg !important;
+}
+
+.mbxl, .mvxl, .maxl {
+  margin-bottom: $space-x-lg !important;
+}
+
+.mln, .mhn, .man {
+  margin-left: 0 !important;
+}
+
+.mlx, .mhx, .max {
+  margin-left: $space-x-sm !important;
+}
+
+.mls, .mhs, .mas {
+  margin-left: $space-sm !important;
+}
+
+.mlm, .mhm, .mam {
+  margin-left: $space-md !important;
+}
+
+.mll, .mhl, .mal {
+  margin-left: $space-lg !important;
+}
+
+.mlxl, .mhxl, .maxl {
+  margin-left: $space-x-lg !important;
+}

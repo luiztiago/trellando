@@ -1,5 +1,6 @@
 .navbar {
   @include border-radius(0);
+  margin-bottom: 0;
 }
 
 .navbar-brand img {

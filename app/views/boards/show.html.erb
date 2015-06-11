@@ -1,0 +1,13 @@
+<%= content_for(:heading) do %>
+  <h1 class="home-title">VendorForm</h1>
+<% end %>
+
+<section>
+  <div class="row">
+    <% 2.times do |n| %>
+      <div class="col-md-6">
+        <div id="chart-<%= n %>"></div>
+      </div>
+    <% end %>
+  </div>
+</section>
