@@ -1,4 +1,6 @@
 class BoardsController < ApplicationController
 
-  skip_before_action :authenticate_user!, only: :index
+  def index
+    @boards = Client.new(current_user.trello_id).boards
+  end
 end

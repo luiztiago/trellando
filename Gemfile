@@ -21,8 +21,13 @@ gem 'omniauth-trello'
 gem 'dotenv-rails'
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry'
+  gem 'pry-remote'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-rails'
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-
