@@ -15,6 +15,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'ruby-trello'
+gem 'devise'
+gem 'omniauth-trello'
 gem 'dotenv-rails'
 
 group :development, :test do
