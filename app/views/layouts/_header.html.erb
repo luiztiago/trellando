@@ -16,6 +16,18 @@
         <li class="active"><a href="#">Dashboard</a></li>
         <li><a href="#">Cards</a></li>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li class="navbar-user">
+            <a href="#">
+              Hi, <%= current_user.full_name %>!
+              <%= image_tag gravatar_image(current_user), class: "navbar-user-image" %></a>
+          </li>
+          <li><%= link_to('Logout', destroy_user_session_path) %></li>
+        <% else %>
+          <li><%= link_to "Sign in with Trello", user_omniauth_authorize_path(:trello) %></li>
+        <% end %>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
