@@ -5,6 +5,7 @@
     <% if user_signed_in? %>
       <%= link_to('Logout', destroy_user_session_path) %>
       Hello <%= current_user.full_name %>
+      <%= image_tag(gravatar_image current_user) %>
     <% else %>
       <%= link_to "Sign in with Trello", user_omniauth_authorize_path(:trello) %>
     <% end %>
