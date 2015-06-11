@@ -1,0 +1,7 @@
+.navbar {
+  @include border-radius(0);
+}
+
+.navbar-brand img {
+  max-height: 20px
+}

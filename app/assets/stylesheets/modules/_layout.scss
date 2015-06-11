@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 
+html, body {
+  height: 100%
+}
+
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: image-url("dog-opacity.png") no-repeat bottom right;
 }
