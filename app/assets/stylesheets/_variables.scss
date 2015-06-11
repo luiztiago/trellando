@@ -1,6 +1,8 @@
 // Colors
 $body-bg: #F5F5F5;
-$navbar-default-bg: #556A76;
+$primary-color: #556A76;
+$secondary-color: #F2D600;
+$navbar-default-bg: $primary-color;
 $navbar-default-color: white;
 $navbar-default-link-color: white;
 $navbar-default-link-hover-color: lighten(white, 0.5);
