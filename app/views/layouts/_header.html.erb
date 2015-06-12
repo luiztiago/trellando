@@ -18,14 +18,11 @@
         <li class="active dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= fa_icon "columns", class: "prm" %> Boards</a>
           <ul class="dropdown-menu">
-            <% if user_signed_in? %>
-              <% user_boards.each do |board| %>
-                <li><%= link_to board.name, board_path(board.id) %></li>
-              <% end %>
+            <% user_boards.each do |board| %>
+              <li><%= link_to board.name, board_path(board.id) %></li>
             <% end %>
           </ul>
         </li>
-        <li><a href="#">Cards</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
