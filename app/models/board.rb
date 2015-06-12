@@ -36,7 +36,7 @@ class Board < OpenStruct
     cards_with_members.map(&:points).sum
   end
 
-  def best_member_avarage
+  def best_member_average
     members_sort_by_average_points.first
   end
 
