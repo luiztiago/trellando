@@ -20,6 +20,10 @@ class Board < OpenStruct
     (total_points / members_with_cards.count.to_f).round(2)
   end
 
+  def average_points_per_card
+    (total_points / cards_with_members.count.to_f).round(2)
+  end
+
   def average_cards_per_member
     (cards_with_members.count / members_with_cards.count.to_f).round(2)
   end
