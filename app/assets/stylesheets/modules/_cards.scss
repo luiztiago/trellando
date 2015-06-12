@@ -6,6 +6,10 @@
   min-height: 190px;
 }
 
+.card:hover {
+  border-color: #aaa;
+}
+
 .card-title {
   font-weight: 700;
   color: $primary-color;

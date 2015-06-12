@@ -114,8 +114,9 @@
           <%= image_tag gravatar_image(current_user, "150"), class: "card-photo mtl mvm" %>
           <h3><%= member.fullName %></h3>
           <ul class="card-list">
-            <li>Average points: <strong><%= member.average_points %></strong></li>
             <li>Quantity cards: <strong><%= member.cards.count %></strong></li>
+            <li>Average points: <strong><%= member.average_points %></strong></li>
+            <li>Total points: <strong>---</strong></li>
           </ul>
         </div>
       </div>
