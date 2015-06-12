@@ -94,7 +94,7 @@
       <canvas id="chart-1" data-values="#values-1" width="500" height="200"></canvas>
       <ul id="values-1" class="dnone">
         <% @board.members_with_cards.each do |member| %>
-          <li data-label="<%= member.fullName %>" data-value="<%= member.cards.count %>"></li>
+          <li data-label="<%= member.fullName %>" data-amount="<%= member.cards.count %>"></li>
         <% end %>
       </ul>
     </div>
@@ -103,7 +103,7 @@
       <canvas id="chart-2" data-values="#values-2" width="500" height="200"></canvas>
       <ul id="values-2" class="dnone">
         <% @board.members_with_cards.each do |member| %>
-          <li data-label="<%= member.fullName %>" data-value="<%= member.total_points %>"></li>
+          <li data-label="<%= member.fullName %>" data-amount="<%= member.total_points %>"></li>
         <% end %>
       </ul>
     </div>
