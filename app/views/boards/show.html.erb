@@ -93,14 +93,19 @@
       <h3 class="module-title"><%= fa_icon "line-chart" %> Cards / member</h3>
       <canvas id="chart-1" data-values="#values-1" width="500" height="200"></canvas>
       <ul id="values-1" class="dnone">
-        <li data-label="Luiz" data-value="10"></li>
-        <li data-label="Diego" data-value="25"></li>
-        <li data-label="Rodolfo" data-value="40"></li>
+        <% @board.members_with_cards.each do |member| %>
+          <li data-label="<%= member.fullName %>" data-value="<%= member.cards.count %>"></li>
+        <% end %>
       </ul>
     </div>
     <div class="col-md-6">
       <h3 class="module-title"><%= fa_icon "line-chart" %> Points / member</h3>
-      <canvas id="chart-2" width="500" height="200"></canvas>
+      <canvas id="chart-2" data-values="#values-2" width="500" height="200"></canvas>
+      <ul id="values-2" class="dnone">
+        <% @board.members_with_cards.each do |member| %>
+          <li data-label="<%= member.fullName %>" data-value="<%= member.total_points %>"></li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </section>
