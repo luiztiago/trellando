@@ -8,3 +8,10 @@
     margin: 0
   }
 }
+
+.section-footer {
+  background: white;
+  padding: 20px 0 10px 0;
+  border-top: 4px solid #e6e6e6;
+  @include opacity(0.8);
+}
