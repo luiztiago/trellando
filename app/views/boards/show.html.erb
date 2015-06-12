@@ -68,7 +68,7 @@
           <%= image_tag "https://octodex.github.com/images/constructocat2.jpg", class: "card-image" %>
         </div>
         <div class="col-md-8 text-left ptl">
-          <h4><strong>Rubens Barrichelo</strong> - Prefer minor tasks</h4>
+          <h4><strong><%= @board.member_minor_tasks.fullName %></strong> - Prefer minor tasks</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum ipsam nam cupiditate temporibus, non facilis ducimus et architecto laboriosam.</p>
         </div>
       </div>
@@ -79,7 +79,7 @@
           <%= image_tag "https://octodex.github.com/images/droctocat.png", class: "card-image" %>
         </div>
         <div class="col-md-8 text-left ptl">
-          <h4><strong>Louis Hamilton</strong> - Has more tasks</h4>
+          <h4><strong><%= @board.member_with_more_tasks.fullName %></strong> - Has more tasks</h4>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum ipsam nam cupiditate temporibus, non facilis ducimus et architecto laboriosam.</p>
         </div>
       </div>

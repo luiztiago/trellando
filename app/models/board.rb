@@ -33,7 +33,15 @@ class Board < OpenStruct
   end
 
   def best_member_avarage
-    members.sort_by { |member| member.average_points }.first
+    members_sort_by_average_points.first
+  end
+
+  def member_minor_tasks
+    members_sort_by_average_points.last
+  end
+
+  def member_with_more_tasks
+    members_with_cards.sort { |member1, member2| member2.cards.size <=> member1.cards.size }.first
   end
 
   private
@@ -44,5 +52,9 @@ class Board < OpenStruct
 
   def member_ids_with_cards
     @_member_ids_with_cards ||= cards_with_members.flat_map(&:idMembers).uniq
+  end
+
+  def members_sort_by_average_points
+    members_with_cards.sort { |member1, member2| member2.average_points <=> member1.average_points }
   end
 end
