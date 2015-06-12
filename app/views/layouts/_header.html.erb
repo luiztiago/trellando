@@ -30,7 +30,7 @@
         <% if user_signed_in? %>
           <li class="navbar-user">
             <a href="#">
-              Hi, <%= current_user.full_name %>!
+              Hi <%= current_user.full_name %>!
               <%= image_tag gravatar_image(current_user, "80"), class: "navbar-user-image" %></a>
           </li>
           <li>
