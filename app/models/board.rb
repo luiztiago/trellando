@@ -9,7 +9,7 @@ class Board < OpenStruct
   end
 
   def members
-    @_members ||= self[:members].map { |member| Member.new(member) }
+    @_members ||= self[:members].map { |member| Member.new(member.merge(board_cards: cards)) }
   end
 
   def average_points_per_member
