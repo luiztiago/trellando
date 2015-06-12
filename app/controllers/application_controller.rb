@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
 
   def user_boards
-    trello_client.boards
+    trello_client.boards if current_user
   end
 
   private
