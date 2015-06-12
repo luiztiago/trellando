@@ -5,6 +5,6 @@ class Card < OpenStruct
   end
 
   def points
-    name[/(\d)/]
+    name[/(\d)/].to_i
   end
 end

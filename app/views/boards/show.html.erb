@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-md-3">
       <div class="card">
-        <h1 class="card-title">22.45</h1>
+        <h1 class="card-title"><%= @board.average_cards_per_member %></h1>
         <h3>Average <strong>cards</strong> per member</h3>
       </div>
     </div>
@@ -18,13 +18,13 @@
     </div>
     <div class="col-md-3">
       <div class="card">
-        <h1 class="card-title">13</h1>
+        <h1 class="card-title"><%= @board.members.count %></h1>
         <h3>Board members</h3>
       </div>
     </div>
     <div class="col-md-3">
       <div class="card">
-        <h1 class="card-title">27</h1>
+        <h1 class="card-title"><%= @board.cards.count %></h1>
         <h3>Total cards</h3>
       </div>
     </div>
