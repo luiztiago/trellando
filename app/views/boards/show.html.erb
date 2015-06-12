@@ -111,7 +111,7 @@
 <section>
   <h3 class="module-title pvl"><%= fa_icon "users" %> Active Members (Supercards)</h3>
   <div class="row">
-    <% @board.members.each do |member| %>
+    <% @board.members_with_cards.each do |member| %>
       <div class="col-md-3">
         <div class="card card-super">
           <%= image_tag gravatar_image(current_user, "150"), class: "card-photo mtl mvm" %>

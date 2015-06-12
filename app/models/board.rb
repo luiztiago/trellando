@@ -12,6 +12,10 @@ class Board < OpenStruct
     @_members ||= self[:members].map { |member| Member.new(member.merge(board_cards: cards)) }
   end
 
+  def members_with_cards
+    @_members_with_cards ||= members.select { |member| member_ids_with_cards.include?(member.id) }
+  end
+
   def average_points_per_member
     (total_points / members_with_cards.count.to_f).round(2)
   end
@@ -32,10 +36,6 @@ class Board < OpenStruct
 
   def cards_with_members
     @_cards_with_members ||= cards.select { |card| card.idMembers.present? }
-  end
-
-  def members_with_cards
-    @_members_with_cards ||= members.select { |member| member_ids_with_cards.include?(member.id) }
   end
 
   def member_ids_with_cards
