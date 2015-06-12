@@ -111,14 +111,14 @@
 <section>
   <h3 class="module-title pvl"><%= fa_icon "users" %> Active Members (Supercards)</h3>
   <div class="row">
-    <% 4.times do %>
+    <% @board.members.each do |member| %>
       <div class="col-md-3">
         <div class="card card-super">
           <%= image_tag gravatar_image(current_user, "150"), class: "card-photo mtl mvm" %>
-          <h3><%= current_user.full_name %></h3>
+          <h3><%= member.fullName %></h3>
           <ul class="card-list">
-            <li>Average points: <strong>3.7</strong></li>
-            <li>Quantity cards: <strong>48</strong></li>
+            <li>Average points: <strong><%= member.average_points %></strong></li>
+            <li>Quantity cards: <strong><%= member.cards.count %></strong></li>
           </ul>
         </div>
       </div>
