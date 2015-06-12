@@ -16,8 +16,6 @@ S.controller("load-chart", function(input, options) {
     amounts.push(amount);
   });
 
-  console.log(labels, amounts);
-
   data = {
     labels: labels,
     datasets: [

@@ -15,16 +15,16 @@
 
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
-        <li class="active dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= fa_icon "columns", class: "prm" %> Boards</a>
-          <ul class="dropdown-menu">
-            <% if user_signed_in? %>
+        <% if user_signed_in? %>
+          <li class="active dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= fa_icon "columns", class: "prm" %> Boards</a>
+            <ul class="dropdown-menu">
               <% user_boards.each do |board| %>
                 <li><%= link_to board.name, board_path(board.id) %></li>
               <% end %>
-            <% end %>
-          </ul>
-        </li>
+            </ul>
+          </li>
+        <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
