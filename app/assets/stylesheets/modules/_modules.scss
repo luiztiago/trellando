@@ -1,0 +1,9 @@
+.module-title {
+  font-weight: 300;
+  text-transform: uppercase;
+
+  .fa {
+    @extend .text-muted;
+    padding-right: 10px;
+  }
+}
