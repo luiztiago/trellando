@@ -16,12 +16,17 @@ class Client
     items.map { |item| Board.new(item) }
   end
 
+  def board(id, params = {})
+    board = get "/boards/#{id}", params
+    Board.new(board)
+  end
+
   private
 
   attr_reader :trello_client
 
   def get(route, params = {})
-    parse_json trello_client.get(route, params.merge(DEFAULT_OPTIONS))
+    parse_json trello_client.get(route, DEFAULT_OPTIONS.merge(params))
   end
 
   def parse_json(content)
