@@ -1,4 +1,4 @@
-class Board < OpenStruct
+class Card < OpenStruct
 
   def initialize(params)
     super(params)
