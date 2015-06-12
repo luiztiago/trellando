@@ -2,11 +2,10 @@ class Board < OpenStruct
 
   def initialize(params)
     super(params)
-    set_cards
   end
 
-  def all_cards
-    @_cards ||= cards.map { |card| Card.new(card) }
+  def cards
+    @_cards ||= self[:cards].map { |card| Card.new(card) }
   end
 
   def find_card(id)
