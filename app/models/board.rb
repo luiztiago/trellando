@@ -24,11 +24,11 @@ class Board < OpenStruct
     all_cards.find { |card| card.id == id }
   end
 
-  private
-
   def total_points
     cards_with_members.map(&:points).sum
   end
+
+  private
 
   def cards_with_members
     @_cards_with_members ||= cards.select { |card| card.idMembers.present? }
