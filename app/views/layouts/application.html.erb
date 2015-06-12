@@ -8,16 +8,18 @@
 </head>
 <body>
 
-<%= render "layouts/header" %>
+<div class="wrap">
+  <%= render "layouts/header" %>
 
-<section class="section-header">
-  <div class="text-center">
-    <%= yield :heading %>
+  <section class="section-header">
+    <div class="text-center">
+      <%= yield :heading %>
+    </div>
+  </section>
+
+  <div class="container">
+    <%= yield %>
   </div>
-</section>
-
-<div class="container pbxl">
-  <%= yield %>
 </div>
 
 <footer class="section-footer">
