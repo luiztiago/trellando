@@ -111,7 +111,7 @@
     <% @board.members_with_cards.each do |member| %>
       <div class="col-md-3">
         <div class="card card-super">
-          <%= image_tag gravatar_image(current_user, "150"), class: "card-photo mtl mvm" %>
+          <%= image_tag "https://trello-avatars.s3.amazonaws.com/#{member.avatarHash}/170.png", class: "card-photo mtl mvm" %>
           <h3><%= member.fullName %></h3>
           <ul class="card-list">
             <li>Quantity cards: <strong><%= member.cards.count %></strong></li>
