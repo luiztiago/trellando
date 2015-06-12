@@ -35,7 +35,11 @@
               Hi, <%= current_user.full_name %>!
               <%= image_tag gravatar_image(current_user), class: "navbar-user-image" %></a>
           </li>
-          <li><%= link_to('Logout', destroy_user_session_path) %></li>
+          <li>
+            <%= link_to destroy_user_session_path do %>
+              Sign-out <%= fa_icon "sign-out", class: "plm" %>
+            <% end %>
+          </li>
         <% else %>
           <li><%= link_to "Sign in with Trello", user_omniauth_authorize_path(:trello) %></li>
         <% end %>

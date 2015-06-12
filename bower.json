@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "Chart.js": "~1.0.2"
+    "Chart.js": "~1.0.2",
+    "spicejs": "~0.7.14"
   }
 }

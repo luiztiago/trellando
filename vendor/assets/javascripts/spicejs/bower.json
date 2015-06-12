@@ -1,0 +1,30 @@
+{
+  "name": "spicejs",
+  "version": "0.7.14",
+  "homepage": "https://github.com/3den/spicejs",
+  "authors": [
+    "Marcelo Eden <edendroid@gmail.com>",
+    "Luiz Tiago <luiztiago@gmail.com>"
+  ],
+  "description": "A minimal MV* javascript framework",
+  "main": "index.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "mvc",
+    "framework",
+    "bdd",
+    "tests"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "custom*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -14,4 +14,12 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require Chart.js/Chart.min.js
+//= require spicejs
+//= require spicejs/ext/polyfill
+//= require spicejs/ext/route_browser
+//= require spicejs/ext/jquery.control
+
+//= require_tree ./config
+//= require_tree ./models
+//= require_tree ./controllers
 //= require_tree .

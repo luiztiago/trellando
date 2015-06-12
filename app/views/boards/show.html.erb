@@ -4,10 +4,39 @@
 
 <section>
   <div class="row">
-    <% 2.times do |n| %>
-      <div class="col-md-6">
-        <div id="chart-<%= n %>"></div>
+    <div class="col-md-3">
+      <div class="card">
+        <h1><strong>22.45</strong></h1>
+        <h3>Average <strong>cards</strong> per member</h3>
       </div>
-    <% end %>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <h1><strong>3.27</strong></h1>
+        <h3>Average <strong>points</strong> per member</h3>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <h1><strong>13</strong></h1>
+        <h3>Board members</h3>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <h1><strong>27</strong></h1>
+        <h3>Total cards</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Tasks / week</h3>
+      <canvas id="chart-1" width="500" height="400"></canvas>
+    </div>
+    <div class="col-md-6">
+      <h3>Points / week</h3>
+      <canvas id="chart-2" width="500" height="400"></canvas>
+    </div>
   </div>
 </section>

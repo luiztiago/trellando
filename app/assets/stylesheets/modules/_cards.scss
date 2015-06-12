@@ -1,0 +1,7 @@
+.card {
+  @extend .thumbnail;
+  @extend .text-center;
+  padding-bottom: 20px;
+  background: #fff;
+  min-height: 190px;
+}

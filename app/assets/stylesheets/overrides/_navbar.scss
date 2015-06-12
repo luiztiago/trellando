@@ -10,7 +10,7 @@
 .navbar-user {
   padding-left: 50px;
   position: relative;
-  border-right: 1px solid lighten(white, 0.5);
+  border-right: 1px solid opacify(#fff, 0.5);
 
   a {
     cursor: default;
