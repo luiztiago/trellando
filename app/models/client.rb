@@ -12,10 +12,19 @@ class Client
   end
 
   def boards(params = {})
-    trello_client.get("/members/me/boards", params.merge(DEFAULT_OPTIONS))
+    items = get "/members/me/boards", params
+    items.map { |item| Board.new(item) }
   end
 
   private
 
   attr_reader :trello_client
+
+  def get(route, params = {})
+    parse_json trello_client.get(route, params.merge(DEFAULT_OPTIONS))
+  end
+
+  def parse_json(content)
+    JSON.parse(content)
+  end
 end
