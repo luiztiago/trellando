@@ -119,8 +119,8 @@
           <%= image_tag trello_image(member), class: "card-photo mtl mvm" %>
           <h3><%= member.fullName %></h3>
           <ul class="card-list">
-            <li>Quantity cards: <strong><%= member.cards.count %></strong></li>
-            <li>Average points: <strong><%= member.average_points %></strong></li>
+            <li>Total cards: <strong><%= member.cards.count %></strong></li>
+            <li>Average points per card: <strong><%= member.average_points %></strong></li>
             <li>Total points: <strong><%= member.total_points %></strong></li>
           </ul>
         </div>
