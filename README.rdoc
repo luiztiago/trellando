@@ -1,3 +1,3 @@
 == README
 
-Wobo Hackathon project
+Wobo Hackathon project (http://trellando.herokuapp.com/)
